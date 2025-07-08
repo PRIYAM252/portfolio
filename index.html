@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+
+  <!-- ✅ Google Font (Poppins) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+  <!-- ✅ CSS File -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- ✅ Smooth Scroll -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://thewowstyle.com/wp-content/uploads/2015/01/nature-images..jpg" 
+    alt="Profile Photo" class="profile-img" />
+    <h1>Priyam Kumari</h1>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="projects.html">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
+<!-- ✅ Theme Toggle Button -->
+  <button id="toggleTheme">🌓 Toggle Theme</button>
+  </header>
+
+ <section id="about">
+  <h2>About Me</h2>
+  <p>I am a beginner web developer learning HTML and CSS.</p>
+
+  <a href="Priyam_Kumari_Resume.pdf.pdf" target="_blank" class="btn">📄 View Resume</a>
+<a href="Priyam_Kumari_Resume.pdf.pdf" download class="btn">⬇️ Download Resume</a>
+
+</section>
+
+
+<!-- ✅ SKILLS SECTION ADD YAHAN KIYA -->
+<section id="skills">
+  <h2>My Skills</h2>
+  <ul class="skills-list">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript (Basic)</li>
+    <li>Git & GitHub</li>
+    <li>React (Learning)</li>
+  </ul>
+</section>
+
+<section id="projects">
+  <h2>My Projects</h2>
+
+  
+    <h3>Calculator</h3>
+    <p>A simple calculator built with HTML, CSS, and JS.</p>
+   
+
+</section>
+
+
+
+  <section id="contact">
+  <h2>Contact Me</h2>
+
+  <form action="https://formsubmit.co/rajputpriyam26@gmail.com" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" placeholder="Your Message" required></textarea>
+
+    <!-- Optional Hidden Inputs -->
+    <input type="hidden" name="_subject" value="New message from portfolio!" />
+    <input type="hidden" name="_captcha" value="false" />
+    <input type="hidden" name="_template" value="box" />
+
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+  <footer>
+  <p>© 2025 Priyam Kumari. All rights reserved.</p>
+
+  <!-- ✅ Add social links here -->
+  <div class="social">
+    <a href="https://github.com/PRIYAM252" target="_blank">GitHub</a>
+    <a href="https://linkedin.com/in/your-id" target="_blank">LinkedIn</a>
+  </div>
+  
+
+</footer>
+<script>
+  const toggleBtn = document.getElementById("toggleTheme");
+  toggleBtn.onclick = () => {
+    document.body.classList.toggle("dark-mode");
+  };
+</script>
